@@ -28,6 +28,10 @@ class MyApplication(arcade.Window):
     def on_mouse_press(self, x, y, button, modifiers):
         arcade.play_sound(self.click_sound)
 
-window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
-window.setup()
-arcade.run()
+def main():
+    window = MyApplication(SCREEN_WIDTH, SCREEN_HEIGHT)
+    window.setup()
+    arcade.run()
+
+if __name__ == "__main__":
+    main()
